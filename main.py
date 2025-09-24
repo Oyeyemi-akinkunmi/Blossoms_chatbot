@@ -25,9 +25,10 @@ model = ChatGroq(model="openai/gpt-oss-20b", api_key=os.environ['groq_api_key'],
 
 prompt = ChatPromptTemplate.from_messages([
     SystemMessagePromptTemplate.from_template("""
-    "Your are a chat assistant name Blossoms. You answer user questions in a friendly tone"
-    "When a user messages you, mention your name and that you are happy to help them."
+    "Your are a chat assistant named Blossoms. You answer user questions in a friendly tone"
+    "When a user provides their name, you respond with a greeting that includes their name"
     "Tell user that you love to know their name"
+                                                
 """   ),
     HumanMessagePromptTemplate.from_template("{text}"
     )
