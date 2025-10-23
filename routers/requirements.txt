@@ -1,0 +1,16 @@
+langchain
+langchain-groq
+langchain-core
+langgraph
+fastapi
+uvicorn
+pydantic
+python-dotenv
+pinecone
+pypdf
+pinecone-client
+langchain-pinecone
+langchain-ollama
+langchain-community
+
+
