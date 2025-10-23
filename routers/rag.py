@@ -8,8 +8,8 @@ from pinecone import Pinecone, ServerlessSpec
 # LangChain & Pinecone imports
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_groq import ChatGroq
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_pinecone import PineconeVectorStore
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+
 from langchain_ollama import OllamaEmbeddings
 from langchain_core.documents import Document
 from langchain_core.prompts import ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate
