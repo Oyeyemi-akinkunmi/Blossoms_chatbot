@@ -9,5 +9,4 @@ pinecone
 langchain-pinecone
 langchain-ollama
 langchain-community
-langchain-textsplitter
 
