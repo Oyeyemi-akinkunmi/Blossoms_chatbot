@@ -53,7 +53,7 @@ workflow.add_edge("call_model", END)
 
 graph = workflow.compile(checkpointer=memory)
 
-@app.get("/")
+@app.get("/ChatbotAssistant")
 async def root(text:str):
     messages = prompt.format_messages(
         text=text)

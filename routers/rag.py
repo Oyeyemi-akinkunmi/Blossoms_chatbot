@@ -85,7 +85,7 @@ async def ask_question(request: QueryRequest):
         return {"question": request.question, "answer": response["answer"]}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-
+'''
 #Upload endpoint
 @router.post("/upload")
 async def upload_pdf(file: UploadFile = File(...)):
@@ -114,3 +114,4 @@ async def upload_pdf(file: UploadFile = File(...)):
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Upload failed: {e}")
+'''
