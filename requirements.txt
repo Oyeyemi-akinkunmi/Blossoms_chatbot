@@ -12,5 +12,6 @@ pinecone-client>=3.0.0
 langchain-pinecone
 langchain-ollama
 langchain-community
+ollama
 
 
