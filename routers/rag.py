@@ -10,7 +10,7 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_groq import ChatGroq
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-from langchain_ollama import OllamaEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.documents import Document
 from langchain_core.prompts import ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate
 from langgraph.graph import StateGraph, START
@@ -22,7 +22,7 @@ load_dotenv()
 
 # Initialize LLM
 llm = ChatGroq(model="openai/gpt-oss-120b", api_key=os.environ["groq_api_key"], temperature=0)
-embeddings = OllamaEmbeddings(model="nomic-embed-text")
+embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
 # Initialize Pinecone
 pc= Pinecone(api_key=os.environ["PINECONE_API_KEY"])
